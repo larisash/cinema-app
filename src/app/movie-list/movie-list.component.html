@@ -1,8 +1,8 @@
 <div class="album py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <movie-item></movie-item>
+      <div *ngFor="let movie of moviesList" class="col-md-4">
+        <movie-item [data]="movie"></movie-item>
       </div>
     </div>
   </div>
